@@ -1,0 +1,26 @@
+--- hash_helper.h	2018-04-26 16:05:20.866383138 +0200
++++ -	2018-04-26 16:06:27.018289939 +0200
+@@ -13,7 +13,7 @@
+  */
+ typedef struct
+ {
+-	unsigned short crc;
++    unsigned short crc;
+ } crc16_context;
+ 
+ /**
+@@ -33,10 +33,10 @@ typedef unsigned int MD5_u32plus;
+  */
+ typedef struct
+ {
+-	MD5_u32plus lo, hi;
+-	MD5_u32plus a, b, c, d;
+-	unsigned char buffer[64];
+-	MD5_u32plus block[16];
++    MD5_u32plus lo, hi;
++    MD5_u32plus a, b, c, d;
++    unsigned char buffer[64];
++    MD5_u32plus block[16];
+ } MD5_CTX;
+ 
+ /**
